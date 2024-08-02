@@ -1,0 +1,64 @@
+/**
+ * @author      Andreas Knollmann
+ * @copyright   2014-2024 Softwareentwicklung Andreas Knollmann
+ * @license     http://www.opensource.org/licenses/mit-license.php MIT
+ */
+
+body > pre {
+    background: #f6f6f6;
+    border: 1px solid #cccccc;
+    color: #111111;
+    margin: 0 0 10px;
+    padding: 10px;
+    font-size: 12px;
+    line-height: 16px;
+    display: block;
+    word-wrap: break-word;
+}
+
+.block-info {
+    display: block !important;
+}
+
+.block-info .block-info-details {
+    float: left;
+}
+
+.block-info .block-info-details .block-info-details-icon img {
+    margin: 2px;
+    content: url(https://cdn.onlinewebfonts.com/svg/img_151567.png);
+    width: 15px;
+}
+
+.block-info .block-info-details .block-info-details-content {
+    position: absolute;
+    margin-top: 2px;
+    border: #aaa 1px solid;
+    border-radius: 5px;
+    padding: 5px;
+    background-color: #fff;
+    color: #000;
+    white-space: nowrap;
+    z-index: 9999;
+    visibility: hidden;
+}
+
+.block-info .block-info-details:hover .block-info-details-content {
+    visibility: visible;
+}
+
+.block-uncacheable {
+    border: 1px solid #a00;
+}
+
+.block-cached {
+    border: 1px solid #0a0;
+}
+
+.block-uncached {
+    border: 1px solid #aa0;
+}
+
+.block-default {
+    border: 1px solid #aaa;
+}
